@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.omerakturk.rabbitmq_mesaj_app.MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+
+        >
+
+        <Button
+            android:id="@+id/_btn_kanal1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kanal1" />
+
+        <Button
+            android:id="@+id/_btn_kanal2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="kanal2" />
+
+        <Button
+            android:id="@+id/_btn_kanal3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="kanal3" />
+
+        <Button
+            android:id="@+id/_btn_kanal4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kanal4" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/_txt_alangelen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mesaj Gelecek Alan"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/_txt_alangiden"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/_txt_alangelen"
+            android:paddingLeft="200dp"
+            android:text="Mesaj Gidecek alan"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        >
+
+        <EditText
+            android:id="@+id/_editText"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="Gönderilecek Mesaj"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            />
+        <Button
+            android:id="@+id/_btn_gonder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="gönder"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+</LinearLayout>
+
+
+
